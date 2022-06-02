@@ -10,7 +10,6 @@ links_menu = [
 def index(request):
     title = 'Главная страница'
 
-
     context = {
         'title': title,
         'links_menu': links_menu,

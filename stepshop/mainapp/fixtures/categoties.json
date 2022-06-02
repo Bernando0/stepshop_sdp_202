@@ -1,0 +1,26 @@
+[
+  {
+    "model": "mainapp.productcategory",
+    "pk": 1,
+    "fields": {
+      "name": "Джинсы",
+      "description": "Крутетские джинсы"
+    }
+  },
+  {
+    "model": "mainapp.productcategory",
+    "pk": 2,
+    "fields": {
+      "name": "Обувь",
+      "description": "Апупенная обувь"
+    }
+  },
+  {
+    "model": "mainapp.productcategory",
+    "pk": 3,
+    "fields": {
+      "name": "Кепки",
+      "description": "Абубенные кепки"
+    }
+  }
+]

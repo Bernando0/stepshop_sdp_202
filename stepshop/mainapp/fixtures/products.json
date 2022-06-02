@@ -1,0 +1,62 @@
+[
+  {
+    "model": "mainapp.product",
+    "pk": 1,
+    "fields": {
+      "category": 2,
+      "name": "Венсы",
+      "image": "product_images/f0442e68-d0c5-4980-b01e-0c80b1783254.jfif",
+      "short_desc": "Венсики крутые",
+      "description": "",
+      "price": "12000.00",
+      "quantity": 8,
+      "created_at": "2022-06-01T11:40:49.348Z",
+      "updated_at": "2022-06-02T10:09:54.748Z"
+    }
+  },
+  {
+    "model": "mainapp.product",
+    "pk": 2,
+    "fields": {
+      "category": 3,
+      "name": "Докерка",
+      "image": "product_images/кошка0_bYRmfst.jfif",
+      "short_desc": "докидоки",
+      "description": "",
+      "price": "3000.00",
+      "quantity": 12,
+      "created_at": "2022-06-01T11:41:56.892Z",
+      "updated_at": "2022-06-02T10:09:45.921Z"
+    }
+  },
+  {
+    "model": "mainapp.product",
+    "pk": 3,
+    "fields": {
+      "category": 1,
+      "name": "Кокакола",
+      "image": "product_images/кошка0.jfif",
+      "short_desc": "Фу бяка",
+      "description": "Бимбам",
+      "price": "250.00",
+      "quantity": 29,
+      "created_at": "2022-06-02T09:22:21.912Z",
+      "updated_at": "2022-06-02T09:23:23.805Z"
+    }
+  },
+  {
+    "model": "mainapp.product",
+    "pk": 4,
+    "fields": {
+      "category": 2,
+      "name": "Правый кед",
+      "image": "",
+      "short_desc": "Только правый",
+      "description": "",
+      "price": "700.00",
+      "quantity": 7,
+      "created_at": "2022-06-02T09:48:02.402Z",
+      "updated_at": "2022-06-02T09:50:02.945Z"
+    }
+  }
+]

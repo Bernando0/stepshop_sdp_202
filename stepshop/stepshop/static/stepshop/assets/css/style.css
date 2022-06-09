@@ -1,0 +1,8 @@
+#pre-header a{
+    padding: 5px;
+    color: white;
+}
+
+#pre-header a:hover {
+    opacity: 0.8;
+}

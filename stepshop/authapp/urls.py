@@ -13,23 +13,18 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-from django.contrib import admin
-from django.urls import path, include
-from django.conf import settings
-from django.conf.urls.static import static
 
-from stepshop.views import index, contacts, about
+from authapp.views import login, logout, register, edit
+
+from django.contrib import admin
+from django.urls import path
+from mainapp.views import products, product
+
+app_name = 'auth'
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', index, name='index'),
-    path('contacts/', contacts, name='contacts'),
-    path('about/', about, name='about'),
-    path('products/', include('mainapp.urls', namespace='products')),
-    path('auth/', include('authapp.urls', namespace='auth')),
-
+    path('login/', login, name='login'),
+    path('logout/', logout, name='logout'),
+    path('edit/', edit, name='edit'),
+    path('register/', register, name='register'),
 ]
-
-
-if settings.DEBUG:
-    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

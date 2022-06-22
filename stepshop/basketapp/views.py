@@ -7,6 +7,12 @@ from basketapp.models import Basket
 from mainapp.models import Product
 from mainapp.views import product
 
+links_menu = [
+    {'href': 'index', 'name': 'Домой', 'route': ''},
+    {'href': 'products:index', 'name': 'Продукты', 'route': 'products/'},
+    {'href': 'about', 'name': 'О нас', 'route': 'about/'},
+    {'href': 'contacts', 'name': 'Контакты', 'route': 'contacts/'},
+]
 
 @login_required
 def basket(request):
@@ -14,6 +20,7 @@ def basket(request):
         basket_ = Basket.objects.filter(user=request.user)
         context = {
             'basket': basket_,
+            'links_menu': links_menu,
         }
         return render(request, 'basketapp/basket.html', context)
     else:
